@@ -3,7 +3,7 @@ const  greeting=(name)=> {
     return name
 }
 
-const  processUserInput=(callback,name)=> {
+export const processUserInput=(callback,name)=> {
     return callback(name);
 }
 

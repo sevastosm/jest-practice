@@ -1,15 +1,12 @@
-import processUserInput from './shoppinglist';
+import {processUserInput} from './callback';
 
 
 function greeting(name) {
-  name ='yo'
   console.log('Hello ' + name);
   return name
 }
 
-test('expect shoping list have 5 items ', () => {
-    expect(processUserInput(greeting)).toBe('yo')
+test('expect to callback ', () => {
+    expect(processUserInput(greeting,'yo')).toBe('yo')
   
 })
-
-processUserInput(greeting);
